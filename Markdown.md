@@ -5,7 +5,7 @@
 - [Heading 2](#heading-2)
   - [Heading 3](#heading-3)
 - [**Heading 2**](#heading-2-1)
-  - [~~Heading 3](#heading-3-1)
+  - [~~Heading 3~~](#heading-3-1)
 - [**Text Formatting**](#text-formatting)
 - [**Lists**](#lists)
 - [**Check-lists**](#check-lists)
@@ -34,15 +34,15 @@
 - With formatting
   # **Heading 1**
   ## **Heading 2**
-  ### ~~Heading 3
+  ### ~~Heading 3~~
 
 <hr>
 
 ## **Text Formatting**
 - Non-HTML
   - **Bold**
-  - *Italics*
-  - ~~Strike-through~~
+  - *Italics**
+  - ~~Strike-through
 - HTML
   - <strong>Bold</strong>
   - <em>Italics</em>
