@@ -2,6 +2,10 @@
 # Index
 - [**General Notes**](#general-notes)
 - [**Headings**](#headings)
+- [Heading 2](#heading-2)
+  - [Heading 3](#heading-3)
+- [**Heading 2**](#heading-2-1)
+  - [~~Heading 3](#heading-3-1)
 - [**Text Formatting**](#text-formatting)
 - [**Lists**](#lists)
 - [**Check-lists**](#check-lists)
@@ -22,15 +26,15 @@
 <!-- Ignore the comments -->
 - Default
   # Heading 1
-  ## Heading 2      <!-- omit from toc -->
-  ### Heading 3     <!-- omit from toc -->
+  ## Heading 2      
+  ### Heading 3     
   #### Heading 4
-  #### Heading 5
-  #### Heading 6
+  ##### Heading 5
+  ###### Heading 6
 - With formatting
   # **Heading 1**
-  ## *Heading 2*    <!-- omit from toc -->
-  ### ~~Heading 3~~ <!-- omit from toc -->
+  ## **Heading 2**
+  ### ~~Heading 3
 
 <hr>
 
