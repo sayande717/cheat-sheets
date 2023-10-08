@@ -25,8 +25,8 @@
   ## Heading 2      <!-- omit from toc -->
   ### Heading 3     <!-- omit from toc -->
   #### Heading 4
-  ##### Heading 5
-  ###### Heading 6
+  #### Heading 5
+  #### Heading 6
 - With formatting
   # **Heading 1**
   ## *Heading 2*    <!-- omit from toc -->
