@@ -41,8 +41,8 @@
 ## **Text Formatting**
 - Non-HTML
   - **Bold**
-  - *Italics**
-  - ~~Strike-through
+  - *Italics*
+  - ~~Strike-through~~
 - HTML
   - <strong>Bold</strong>
   - <em>Italics</em>
