@@ -7,5 +7,5 @@ To clone this repository to your local system, run:
 git clone https://github.com/sayande717/cheat-sheets.git
 ```
 
-- [Git & GitHub](./GitHub.md)
+- [Git & GitHub](./Github.md)
 - [Markdown](./Markdown.md)
