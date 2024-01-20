@@ -167,12 +167,14 @@ Photo by <a href="https://unsplash.com/@wilstewart3?utm_source=unsplash&utm_medi
 ## **Mathematical Symbols**
 Note: Enclose general expressions with \$
 
-$a^2 + 2b = 2$
+Exponent: $a^2 + 2b = 2$
 
-$a < 2$ and $b > 2$
+Comparison: $a < 2$ and $b > 2$
 
-$c \leq 2$ and $d \geq 2$
+Comparison: $c \leq 2$ and $d \geq 2$
 
-TODO: There ought to be a better way to do this. $c$<sub>1</sub> $=2$ and $c$<sub>2</sub> $\leq 1$
+Bar: $A ⊕ B = A \bar B + \bar AB$
+
+Sub-script: $c_1=2$ and $c_2 \leq 1$
 
 [Go back to Topic #1](#markdown-cheat-sheet)
