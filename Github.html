@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&ast;&ast;Git &amp; Github&ast;&ast; Cheat Sheet</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 22px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="git--github-cheat-sheet"><strong>Git &amp; Github</strong> Cheat Sheet</h1>
+<ul>
+<li><a href="#why-git">Why Git?</a></li>
+<li><a href="#contribute-to-a-repository">Contribute to a repository</a></li>
+<li><a href="#create-your-own-repository-and-commit-to-it">Create your own repository and commit to it</a></li>
+<li><a href="#things-to-remember">Things to remember</a></li>
+</ul>
+<h2 id="why-git">Why Git?</h2>
+<ol>
+<li>You can maintain the history of your project. Afterwards, you can go back in time to check which person made which kind of change to which file in the project, what kinds of changes were made, etc.</li>
+<li>It's a version control system, where you basically capture a snapshot of a project and store it as a 'version'.</li>
+<li><code>Git</code> is a version control system, and <code>Github</code> is the front-end platform that allows us to see &amp; manage the repositories.</li>
+</ol>
+<h2 id="contribute-to-a-repository">Contribute to a repository</h2>
+<ol>
+<li>
+<p>Fork the Repository to your own account. This creates a clone of the repository <strong>in your own GitHub account</strong>.
+<img src="file:////mnt/d/serve/Development/Personal/cheat-sheets/res/00-GitHub-fork.png" alt="Fork"></p>
+</li>
+<li>
+<p>Get the HTTPS link for the forked repository, then clone it to your own system. <br></p>
+<pre><code class="language-bash">$ git <span class="hljs-built_in">clone</span> &lt;LINK-TO-REPOSITORY&gt;
+</code></pre>
+<p><img src="file:////mnt/d/serve/Development/Personal/cheat-sheets/res/01-GitHub-clone.png" alt="Clone">
+<strong>Note:</strong> Once the project has been cloned, you can do everything else on your own system.</p>
+</li>
+<li>
+<p>Check the <code>README.md</code> for the project. If it has a <code>CONTRIBUTING.md</code> guide, go through it.</p>
+</li>
+<li>
+<p>Make the necessary changes to the files.</p>
+</li>
+<li>
+<p>Stage your changes, then commit them. <br></p>
+<pre><code class="language-bash">$ git status <span class="hljs-comment"># Check status</span>
+$ git add . <span class="hljs-comment"># Add your changes</span>
+$ git commit -m <span class="hljs-string">&#x27;MESSAGE&#x27;</span> <span class="hljs-comment"># Commit your changes with a message</span>
+</code></pre>
+</li>
+<li>
+<p>You can't push your changes directly in the main branch of the repository, since it will lead to a lot of errors &amp; conflicts. So, you need to create a new branch. Here's how you do it: <br></p>
+<pre><code class="language-bash">$ git branch &lt;BRANCH-NAME&gt; <span class="hljs-comment"># Try to keep the branch name relevant.</span>
+$ git checkout &lt;BRANCH-NAME&gt; <span class="hljs-comment"># Optional, this tells git to push all future commits to this branch.</span>
+</code></pre>
+</li>
+<li>
+<p>Finally, push your changes to the branch you created. <br></p>
+<pre><code class="language-bash">$ git push origin changes <span class="hljs-comment"># Assuming the branch name is &#x27;changes&#x27;.</span>
+</code></pre>
+</li>
+<li>
+<p>The final step is to submit a pull-request. You need to do this on the Github page.</p>
+<blockquote>
+<p>A pull request is a way for you to tell the project maintainers that you have made some changes and would like them to review &amp; integrate them in the main branch of the remote repository. <br>
+Once you submit a pull request, you will have to check up with the maintainers from time to time, and make further changes if they need you to. <br></p>
+</blockquote>
+<ul>
+<li>First, create a new pull request. <br>
+<img src="file:////mnt/d/serve/Development/Personal/cheat-sheets/res/02-GitHub-PR.Create.png" alt="PR Create"> <br></li>
+<li>Next, write a title &amp; description of what changes you made. Check the <code>CONTRIBUTING.md</code> (if there is one) to see if there is a syntax that must be followed here. <br>
+<img src="file:////mnt/d/serve/Development/Personal/cheat-sheets/res/03-Github-PR.Submit.png" alt="PR Submit"></li>
+</ul>
+</li>
+<li>
+<p>Now that your pull request is created, you will automatically be subscribed to notifications regarding to any activity. Once the commit is reviewed by the maintainers, they will merge your commit with the original project.
+<img src="file:////mnt/d/serve/Development/Personal/cheat-sheets/res/04-Github-PR.Success.png" alt="PR Success"></p>
+</li>
+</ol>
+<hr>
+<h2 id="create-your-own-repository-and-commit-to-it">Create your own repository and commit to it</h2>
+<blockquote>
+<p>Note: Since we're pushing to a new repository we just created, we will be committing directly to the main branch. However, under normal circumstances, you should never directly commit to the main branch since the code is used by software that runs in production. You should always create your own branch and add a pull request for your code to be merged with the main branch. Check <a href="#contribute-to-a-repository">above</a> for more details.</p>
+</blockquote>
+<ol>
+<li>
+<p>Create a new repository on <a href="https://github.com/">Github</a> by going to <code>Profile</code> &gt; <code>Your Repositories</code> &gt; <code>New</code>.
+<br> <img src="file:////mnt/d/serve/Development/Personal/cheat-sheets/res/05-Github-New%20Repo.png" alt="New Repository prompt"></p>
+</li>
+<li>
+<p>Clone the repository to your local machine. This effectively creates a folder with the same name as the remote repository, and set the <em>checkout</em> branch to main.
+Note: Checkout branch: The branch git is set to push all the committed changes to, unless specified otherwise.</p>
+<pre><code class="language-bash"><span class="hljs-comment"># Put your own Repository URL here</span>
+$ git <span class="hljs-built_in">clone</span> https://github.com/sayande717/temp.git
+</code></pre>
+</li>
+<li>
+<p>Switch to the repository, make some changes.</p>
+<pre><code class="language-bash">$ <span class="hljs-built_in">cd</span> temp  <span class="hljs-comment"># Change to the directory</span>
+$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;hello, world!&quot;</span> &gt;&gt; file.txt <span class="hljs-comment"># Create a new file and add a line to it</span>
+</code></pre>
+</li>
+<li>
+<p>Add your files &amp; commit them.</p>
+<pre><code class="language-bash">$ git add .   <span class="hljs-comment"># Add all files</span>
+$ git commit -m <span class="hljs-string">&#x27;ADD: file.txt&#x27;</span> <span class="hljs-comment"># Commit them with a message</span>
+1 file changed, 1 insertion(+)
+create mode 100644 file.txt
+</code></pre>
+</li>
+<li>
+<p>Push your changes to the main branch. After this, you can see the changes in your remote repository.</p>
+<pre><code class="language-bash">$ git push origin main  <span class="hljs-comment"># Push to the main branch</span>
+Enumerating objects: 3, <span class="hljs-keyword">done</span>.
+Counting objects: 100% (3/3), <span class="hljs-keyword">done</span>.
+Writing objects: 100% (3/3), 226 bytes | 226.00 KiB/s, <span class="hljs-keyword">done</span>.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sayande717/temp.git
+* [new branch]      main -&gt; main
+</code></pre>
+</li>
+</ol>
+<h2 id="things-to-remember">Things to remember</h2>
+<ul>
+<li><code>git status</code>: Use this to check the current status at any time, as long as you're in the repository.</li>
+<li><code>git log</code>: Use this to get a history of all commits you made, in your local machine.</li>
+<li>If you're contributing to a repository that's not yours, make sure you create a separate branch before committing (i.e. never commit to the main branch). Also, if you're working on distinct features/files within the same repositories, create separate branches for each of them.</li>
+<li>A pull request can be associated with only 1 branch, so if you make further changes on the same branch, git will auto-link it to your current pull request.</li>
+<li>Make sure you sync your forked repository from time to time to stay up-to-date with the upstream repository.</li>
+</ul>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
